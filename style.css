@@ -1,0 +1,152 @@
+h1 {
+    color: red;
+    text-align: center;
+    text-shadow: 4px 4px 2px rgb(202, 113, 113);
+}
+
+.Imp {
+    color: rgb(7, 171, 242);
+}
+
+#italic {
+    color: orange;
+}
+
+nav {
+    background-color: rgb(128, 187, 239);
+    text-align: center;
+
+}
+a {
+    text-decoration-line: none;
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    padding: 40px;
+}
+
+.container {
+    border: 10px dashed rgb(4, 55, 64);
+    margin: 50px;
+    padding: 30px;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background: rgb(159, 159, 243);
+    margin: 10px;
+    padding: 30px;
+}
+.circle-img {
+    border-radius: 50%;
+
+}
+img {
+    box-shadow: 8px 8px 10px 8px rgb(156, 167, 172);
+}
+
+.flex{
+    Display: flex;
+    border: 5px solid black;
+    flex-wrap: wrap;
+    margin: 3px;
+    justify-content: center;
+    padding: 100px;
+    justify-content: flex-end ;
+}
+@keyframes fademe{
+    0%{
+        opacity: 1;
+    }
+    100%{
+    opacity: 0;
+    }
+}
+
+#box1{
+    animation-name: fademe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
+}
+#box2 {
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: 4s;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, purple, orange, yellow, pink, purple);
+}
+
+@keyframes getBigger {
+    0%{transform:scale(1);}
+    50%{transform:scale(2);}
+    100%{transform:scale(0.5);}
+}
+
+#box3 {
+    animation: getBigger infinite 6s 8s ease-in;
+    border-radius: 50%;
+    background: orange;
+}
+
+@keyframes changecolors {
+    0%{background-color: grey;}
+    25%{background-color: purple;}
+    50%{background-color: yellow;}
+    75%{background-color: pink;}
+    100%{background-color: grey;}
+
+}
+
+#box4 {
+    animation: changecolors 3s 2s forwards;
+}
+
+@keyframes movebox {
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+    50% {left: 100px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+}
+
+/*#box5{
+    position: relative;
+    background: red;
+    animation: movebox 5s 3s;
+}
+
+#box6{
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+
+html{
+    background-image: radial-gradient(aqua,blue,purple);
+}*/
+
+form input, textarea, button {
+    display:block;
+    margin: 30px;
+
+}
+
+.nav-wrapper {
+    background-color: blue;
+}       
+
+.Logo-Img{
+    height: 50px;
+}
